@@ -13,9 +13,10 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="410dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="394dp"
         android:text="Department"
-        app:layout_constraintStart_toStartOf="@+id/credits"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -23,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="17dp"
-        android:layout_marginBottom="256dp"
+        android:layout_marginBottom="255dp"
         android:text="Languages"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cb2" />
@@ -33,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="19dp"
         android:text="Submit"
         app:layout_constraintEnd_toEndOf="@+id/cb2"
         app:layout_constraintTop_toBottomOf="@+id/cb1" />
@@ -54,14 +55,12 @@
 
     <RadioGroup
         android:id="@+id/department"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="44dp"
+        android:layout_width="258dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="51dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="@+id/cb3"
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView4">
 
@@ -86,78 +85,81 @@
     </RadioGroup>
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/sid"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="113dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="123dp"
         android:ems="10"
         android:hint="Id"
         android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/cgpa"
         app:layout_constraintEnd_toEndOf="@+id/email"
-        app:layout_constraintStart_toStartOf="@+id/sid"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/credits"
         android:layout_width="248dp"
         android:layout_height="46dp"
-        android:layout_marginTop="216dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="216dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="25dp"
         android:ems="10"
         android:hint="Completed Credits"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="@+id/department"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextText2" />
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/cgpa" />
 
     <EditText
         android:id="@+id/cgpa"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginTop="135dp"
-        android:layout_marginBottom="133dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="2dp"
         android:ems="10"
         android:hint="CGPA"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="@+id/credits"
-        app:layout_constraintStart_toStartOf="@+id/email"
-        app:layout_constraintTop_toTopOf="@+id/editTextText2" />
+        app:layout_constraintStart_toStartOf="@+id/sid"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <EditText
         android:id="@+id/email"
         android:layout_width="257dp"
         android:layout_height="41dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="186dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginBottom="186dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/cgpa"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/sid"
+        android:id="@+id/uname"
         android:layout_width="262dp"
         android:layout_height="40dp"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="63dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="70dp"
         android:ems="10"
         android:hint="Username"
         android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextText2"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/sid"
+        app:layout_constraintStart_toStartOf="@+id/sid"
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/cb3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="37dp"
+        android:layout_marginEnd="32dp"
         android:text="Javascript"
         app:layout_constraintBaseline_toBaselineOf="@+id/cb2"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -166,7 +168,7 @@
         android:id="@+id/cb2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="7dp"
         android:layout_marginEnd="8dp"
         android:text="Python"
         app:layout_constraintEnd_toStartOf="@+id/cb3"
